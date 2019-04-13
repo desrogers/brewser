@@ -1,0 +1,31 @@
+<h1>Brews</h1>
+
+<h2>To Brew List</h2>
+
+<ul>
+  {{#each brews}}
+      {{#unless tasted}}
+        {{> brews/brews-block tasted=true }}
+      {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Tasted</h2>
+
+<ul>
+  {{#each brews}}
+      {{#if tasted}}
+        {{> brews/brews-block tasted=false }}
+      {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Brew</h2>
+<form class="create-form">
+  <div class="form-group">
+    <label for="brew">Brew Name:</label>
+    <input type="text" id="brew" name="brew_name">
+  </div>
+  
+  <button type="submit">Submit</button>
+</form>
