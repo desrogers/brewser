@@ -1,6 +1,5 @@
-<li>
-  {{brew_name}}
   {{#if tasted}}
-    <button class="taste" data-id="{{id}}">Sip</button>
+    <button class="taste list-group-item list-group-item-action" data-id="{{id}}">{{brew_name}}</button>
+  {{else}}
+    <button class="taste list-group-item list-group-item-action" data-id="{{id}}" disabled><del>{{brew_name}}</del></button>
   {{/if}}
-</li>
