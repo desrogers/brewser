@@ -1,5 +1,5 @@
 # brewser
-simple web app that helps users keep track of the coffee, tea, and beer they have and haven't tried.
+simple web app that helps users keep track of brews they have and haven't tried, whether it's coffee, tea, or beer.
 
 # Planned Features
 - Styling
